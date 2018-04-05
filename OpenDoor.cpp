@@ -2,7 +2,6 @@
 
 #include "OpenDoor.h"
 #include "BuildingEscape.h"
-
 #include "Runtime/Engine/Classes/GameFramework/Actor.h"
 
 
@@ -22,7 +21,7 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	ActorThatOpensDoor = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
 void UOpenDoor::OpenDoor()
