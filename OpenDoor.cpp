@@ -40,7 +40,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-
+		// 
 	if (PressurePlate->IsOverlappingActor(ActorThatOpensDoor)) 
 	{
 			// Open door
